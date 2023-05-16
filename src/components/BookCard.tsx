@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   title: {
-    fontSize: Style.fontSize.small - 3,
+    fontSize: Style.fontSize.small - 2,
     fontFamily: Style.fontFamily.medium,
     color: '#000',
     marginTop: 5,

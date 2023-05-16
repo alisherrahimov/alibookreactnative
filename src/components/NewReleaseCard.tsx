@@ -1,6 +1,6 @@
 import {Image, StyleSheet, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
-import {AppTheme, normalize} from '../style/style';
+import {AppTheme, Style, normalize} from '../style/style';
 import {useNavigation, useTheme} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {NavigationType} from '../types/NavigationType';
@@ -61,14 +61,12 @@ const styles = StyleSheet.create({
   },
   author: {
     fontFamily: font.medium,
-    fontSize: normalize(10),
-
+    fontSize: Style.fontSize.small - 3,
     marginTop: 8,
   },
   title: {
     fontFamily: font.medium,
-    fontSize: normalize(12),
-
+    fontSize: Style.fontSize.small - 2,
     marginTop: 10,
   },
 });

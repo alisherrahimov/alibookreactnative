@@ -20,7 +20,7 @@ const Search = () => {
   const {colors, dark} = useTheme() as AppTheme;
   const [value, setValue] = useState<string>('');
   const [searchMutation, result] = useSearchMutation();
-  let searchText = useDebounce({time: 1000, debounceValue: value});
+  let searchText = useDebounce({time: 700, debounceValue: value});
 
   const _searchBook = useCallback((val: string) => {
     setValue(val);
@@ -34,9 +34,7 @@ const Search = () => {
         }).unwrap();
       } catch (error) {}
     };
-    if (searchText.length > 0) {
-      getData();
-    }
+    getData();
   }, [searchMutation, searchText]);
 
   return (
