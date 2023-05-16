@@ -1,0 +1,61 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Metropolitano-Black.ttf",
+      "sha1": "70a18e12111aacb74bb82b3267a2762d4c7a0d4f"
+    },
+    {
+      "path": "assets/fonts/Metropolitano-Bold.ttf",
+      "sha1": "e245b0ec0a695b3f3f62a2966457d36363b15976"
+    },
+    {
+      "path": "assets/fonts/Metropolitano-Italic.ttf",
+      "sha1": "72a1c98d19198a10d5fcfced061beaac8c4a2a8a"
+    },
+    {
+      "path": "assets/fonts/Metropolitano-Light.ttf",
+      "sha1": "5c910117eb3c9f917c7119709b2d35b573aeedd0"
+    },
+    {
+      "path": "assets/fonts/Metropolitano-Medium.ttf",
+      "sha1": "318a884fa85acd7a86845986bb3235a837d0b118"
+    },
+    {
+      "path": "assets/fonts/Metropolitano-Thin.ttf",
+      "sha1": "eda79006aa6166f1367a501369bf5b9440c6461b"
+    },
+    {
+      "path": "assets/fonts/Poppins-Black.ttf",
+      "sha1": "645e04c53c6b5b35bce654a811ebce16af8aa721"
+    },
+    {
+      "path": "assets/fonts/Poppins-Bold.ttf",
+      "sha1": "875cf0cecd647bcf22e79d633d868c1b1ec98dfa"
+    },
+    {
+      "path": "assets/fonts/Poppins-Italic.ttf",
+      "sha1": "e2bfcd56016c3c915221ef1c5fc1a17b0776eb91"
+    },
+    {
+      "path": "assets/fonts/Poppins-Light.ttf",
+      "sha1": "e247a92158e112f8bf7b638c8d95381d66b00dbb"
+    },
+    {
+      "path": "assets/fonts/Poppins-Medium.ttf",
+      "sha1": "283f21b44efbdbf276ba802be2d949a36bbc4233"
+    },
+    {
+      "path": "assets/fonts/Poppins-Regular.ttf",
+      "sha1": "fdd3002e7d814ee47c1c1b8487c72c6bbb3a2d00"
+    },
+    {
+      "path": "assets/fonts/Poppins-SemiBold.ttf",
+      "sha1": "8a4ace9392d06bcb7f8ea2f5169b07e4c383a90d"
+    },
+    {
+      "path": "assets/fonts/Poppins-Thin.ttf",
+      "sha1": "09ba4dcd5509c8085bf88c665dcc51cbdfced27b"
+    }
+  ]
+}
