@@ -1,6 +1,7 @@
 import {api} from './mainApi';
 
 export const bookApi = api.injectEndpoints({
+  overrideExisting: true,
   endpoints: build => ({
     search: build.mutation({
       query: ({text}: {text: string}) => {
@@ -29,8 +30,21 @@ export const bookApi = api.injectEndpoints({
         };
       },
     }),
+    getBooksByType: build.query({
+      query: ({type}: {type: string}) => {
+        console.log(type, 'type');
+        return {
+          url: `book/booktype?=${type}`,
+          method: 'GET',
+        };
+      },
+    }),
   }),
 });
 
-export const {useSearchMutation, useGetCategoriesQuery, useGetHomeQuery} =
-  bookApi;
+export const {
+  useSearchMutation,
+  useGetCategoriesQuery,
+  useGetHomeQuery,
+  useGetBooksByTypeQuery,
+} = bookApi;

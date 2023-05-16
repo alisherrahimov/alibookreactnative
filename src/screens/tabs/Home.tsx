@@ -1,4 +1,5 @@
 import {
+  RefreshControl,
   SafeAreaView,
   ScrollView,
   StyleSheet,
@@ -23,14 +24,23 @@ const Home = () => {
   const {dark, colors} = useTheme() as AppTheme;
   const navigation = useNavigation<NativeStackNavigationProp<NavigationType>>();
 
-  const {data: homeData} = useGetHomeQuery({});
+  const {data: homeData, isLoading, refetch} = useGetHomeQuery({});
   const {} = useGetMeQuery({});
 
   return (
     <SafeAreaView
       style={[styles.container, {backgroundColor: colors.background}]}>
       <MainHeader />
-      <ScrollView showsVerticalScrollIndicator={false}>
+      <ScrollView
+        refreshControl={
+          <RefreshControl
+            refreshing={isLoading}
+            onRefresh={() => {
+              refetch();
+            }}
+          />
+        }
+        showsVerticalScrollIndicator={false}>
         <View>
           <View style={styles.header}>
             <Text style={[styles.title, {color: colors.text}]}>Categories</Text>

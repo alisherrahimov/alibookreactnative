@@ -5,11 +5,13 @@ import BookCard from '../components/BookCard';
 import {useRoute} from '@react-navigation/native';
 import {RootStackScreenProps} from '../types/NavigationType';
 import Empty from '../components/Empty';
+import {useGetBooksByTypeQuery} from '../api/bookApi';
 
 const Books = () => {
   const route = useRoute<RootStackScreenProps<'Books'>['route']>();
   const {title, id} = route.params;
-  console.log('red');
+  const {data, isLoading} = useGetBooksByTypeQuery({type: 'news'});
+  console.log(data, 'data');
   return (
     <View style={styles.container}>
       <Header title={title} />
